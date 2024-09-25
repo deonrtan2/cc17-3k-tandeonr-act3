@@ -16,22 +16,20 @@ class MainActivity : AppCompatActivity() {
 
 
         val RollButton:Button = findViewById(R.id.RollButton)
-        RollButton.setOnClickListener {
-
+        rollButton.setOnClickListener {
             rollDiceMa()
-           val RolledView: TextView = findViewById(R.id.RolledView)
-            //
-
-
-            //val toastMa = Toast.makeText(this,"Dice Rolled",Toast.LENGTH_LONG)
+            val toastMa = Toast.makeText(this, "Dice Rolled", Toast.LENGTH_LONG)
+            toastMa.show()
         }
     }
 
     private fun rollDiceMa() {
         val diceMA = DiceMA(6)
         val cubeRoll = diceMA.rollMA()
-
+        
+        val RolledView: TextView = findViewById(R.id.RolledView)
         val diceImage : ImageView = findViewById(R.id.imageView)
+        
         diceImage.setImageResource(R.drawable.dice_1)
 
         if (cubeRoll == 1) {
