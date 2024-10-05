@@ -1,4 +1,4 @@
-package com.example.mybusinesscard
+package com.example.dicerollerr
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
