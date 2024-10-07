@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val RollButton:Button = findViewById(R.id.RollButton)
-        rollButton.setOnClickListener {
+        RollButton.setOnClickListener {
             rollDiceMa()
             val toastMa = Toast.makeText(this, "Dice Rolled", Toast.LENGTH_LONG)
             toastMa.show()
@@ -81,5 +81,3 @@ class DiceMA(val numSidesMA: Int) {
 }
 
 
-
-}
